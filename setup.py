@@ -27,12 +27,12 @@ setup(
     license="Apache License, Version 2.0",
     classifiers=[
         "Framework :: Datasette",
-        "License :: OSI Approved :: Apache Software License"
+        "License :: OSI Approved :: Apache Software License",
     ],
     version=VERSION,
     packages=["datasette_codespaces"],
     entry_points={"datasette": ["codespaces = datasette_codespaces"]},
-    install_requires=["datasette"],
+    install_requires=["datasette", "datasette-x-forwarded-host"],
     extras_require={"test": ["pytest", "pytest-asyncio"]},
     python_requires=">=3.7",
 )
