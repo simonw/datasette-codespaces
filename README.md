@@ -5,13 +5,17 @@
 [![Tests](https://github.com/simonw/datasette-codespaces/workflows/Test/badge.svg)](https://github.com/simonw/datasette-codespaces/actions?query=workflow%3ATest)
 [![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/simonw/datasette-codespaces/blob/main/LICENSE)
 
- Conveniences for running Datasette on GitHub Codespaces
+ Conveniences for running [Datasette](https://datasette.io/) on [GitHub Codespaces](https://github.com/features/codespaces)
 
 ## Installation
 
 Install this plugin in the same environment as Datasette.
 
     datasette install datasette-codespaces
+
+## Tutorial
+
+[Using Datasette in GitHub Codespaces](https://datasette.io/tutorials/codespaces) provides a detailed tutorial introduction to this plugin.
 
 ## Usage
 
