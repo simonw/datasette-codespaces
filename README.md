@@ -21,7 +21,7 @@ Install this plugin in the same environment as Datasette.
 
 Install this when you are using Datasette inside of GitHub Codespaces. It makes the following changes:
 
-- All requests will be treated as the `root` actor provided Datasette is running inside Codespaces (detected through the presence of the `CODESPACE_NAME` environment variable). This should still be secure as GitHub restricts access to servers running in the Codespaces environment based on GitHub authentication.
+- All requests will identified as representing the `root` actor - provided Datasette is running inside Codespaces. This is detected through the presence of the `CODESPACE_NAME` environment variable. GitHub restricts access to servers running in the Codespaces environment based on GitHub authentication, so treating all requests as root should be acceptably secure.
 - The [datasette-x-forwarded-host](https://datasette.io/plugins/datasette-x-forwarded-host) plugin will be installed, ensuring links to other pages within Datasette such as facet navigation work correctly.
 
 ## Development
